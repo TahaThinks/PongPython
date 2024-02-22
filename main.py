@@ -23,9 +23,10 @@ game_is_on = True
 
 while game_is_on:
     screen.update()
+    screen.listen()
+    screen.onkey(go_up, "Up")
+    screen.onkey(go_down, "Down")
 
-screen.listen()
-screen.onkey(go_up, "Up")
-screen.onkey(go_down, "Down")
+
 
 screen.exitonclick()
