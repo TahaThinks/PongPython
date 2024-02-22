@@ -3,18 +3,19 @@ from turtle import Turtle
 class Paddle(Turtle):
     def __init__(self, position):
         super().__init__()
-        self.paddle = Turtle()
-        self.paddle.color("white")
-        self.paddle.shape('square')
-        self.paddle.penup()
-        self.paddle.shapesize(5, 1)
-        self.paddle.goto(position)
+        self.color("white")
+        self.shape('square')
+        self.penup()
+        self.shapesize(5, 1)
+        self.goto(position)
 
     def go_up(self):
-        new_y = self.paddle.ycor() + 20
-        self.paddle.goto(350, new_y)
+        new_y = self.ycor() + 20
+        new_x = self.xcor()
+        self.goto(new_x, new_y)
 
     def go_down(self):
-        new_y = self.paddle.ycor() - 20
-        self.paddle.goto(350, new_y)
+        new_y = self.ycor() - 20
+        new_x = self.xcor()
+        self.goto(new_x, new_y)
 
