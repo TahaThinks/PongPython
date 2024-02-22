@@ -17,8 +17,10 @@ game_is_on = True
 while game_is_on:
     screen.update()
     screen.listen()
+    # Movement of the Right Paddle
     screen.onkey(r_paddle.go_up, "Up")
     screen.onkey(r_paddle.go_down, "Down")
+    # Movement of the Left Paddle
     screen.onkey(l_paddle.go_up, "w")
     screen.onkey(l_paddle.go_down, "s")
 
