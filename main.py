@@ -1,5 +1,7 @@
 from turtle import Screen
 from paddle import Paddle
+from ball import Ball
+
 screen = Screen()
 screen.bgcolor('black')
 screen.setup(width=800, height=600)
@@ -11,6 +13,8 @@ l_position = (-350,0)
 
 r_paddle = Paddle(r_position)
 l_paddle = Paddle(l_position)
+
+ball = Ball()
 
 game_is_on = True
 
