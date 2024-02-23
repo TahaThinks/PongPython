@@ -5,3 +5,4 @@ class Ball(Turtle):
         super().__init__()
         self.shape('ball')
         self.color('white')
+        self.penup()
