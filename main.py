@@ -42,3 +42,4 @@ while game_is_on:
         print("Made Contact")
 
 screen.exitonclick()
+
