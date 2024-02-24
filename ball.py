@@ -20,6 +20,10 @@ class Ball(Turtle):
         new_x = self.xcor() + self.x_move
         new_y = self.ycor() + self.y_move
         self.goto(new_x, new_y)
+    
+    def reset_position(self):
+        self.goto(0, 0)
+        self.bounce_x()
 
 
 
